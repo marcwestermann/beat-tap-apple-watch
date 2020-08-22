@@ -28,14 +28,14 @@ struct ContentView: View {
             
             Button(action: {
                 if self.reset {
-                    _ = WKHapticType.stop
+                    WKInterfaceDevice.current().play(.stop)
                     
 //                    self.isActive = true
                     self.reset = false
                     self.tapCount = 0
                     self.bpm = "0"
                 } else {
-                    _ = WKHapticType.click
+                    WKInterfaceDevice.current().play(.click)
                     handleTap()
                     
                 }

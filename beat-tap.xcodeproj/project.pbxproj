@@ -14,9 +14,9 @@
 		E0A9190824F19E0D000AB05D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9190724F19E0D000AB05D /* HostingController.swift */; };
 		E0A9190A24F19E0D000AB05D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9190924F19E0D000AB05D /* ContentView.swift */; };
 		E0A9190C24F19E0D000AB05D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9190B24F19E0D000AB05D /* ExtensionDelegate.swift */; };
-		E0A9190E24F19E0D000AB05D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9190D24F19E0D000AB05D /* ComplicationController.swift */; };
 		E0A9191024F19E0E000AB05D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A9190F24F19E0E000AB05D /* Assets.xcassets */; };
 		E0A9191324F19E0E000AB05D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A9191224F19E0E000AB05D /* Preview Assets.xcassets */; };
+		E0A9192324F19EFE000AB05D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9192224F19EFE000AB05D /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,15 +66,15 @@
 		E0A918F324F19E0C000AB05D /* beat-tap WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "beat-tap WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A918F924F19E0C000AB05D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		E0A918FB24F19E0D000AB05D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E0A918FD24F19E0D000AB05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0A918FD24F19E0D000AB05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "beat-tap/Info.plist"; sourceTree = SOURCE_ROOT; };
 		E0A9190224F19E0D000AB05D /* beat-tap WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "beat-tap WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A9190724F19E0D000AB05D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		E0A9190924F19E0D000AB05D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0A9190B24F19E0D000AB05D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		E0A9190D24F19E0D000AB05D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		E0A9190F24F19E0E000AB05D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0A9191224F19E0E000AB05D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0A9191424F19E0E000AB05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0A9192224F19EFE000AB05D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 		E0A918E824F19E0B000AB05D = {
 			isa = PBXGroup;
 			children = (
-				E0A918F724F19E0C000AB05D /* beat-tap WatchKit App */,
+				E0A918F724F19E0C000AB05D /* beat-tap */,
 				E0A9190624F19E0D000AB05D /* beat-tap WatchKit Extension */,
 				E0A918F024F19E0B000AB05D /* Products */,
 			);
@@ -107,14 +107,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E0A918F724F19E0C000AB05D /* beat-tap WatchKit App */ = {
+		E0A918F724F19E0C000AB05D /* beat-tap */ = {
 			isa = PBXGroup;
 			children = (
 				E0A918F824F19E0C000AB05D /* Interface.storyboard */,
 				E0A918FB24F19E0D000AB05D /* Assets.xcassets */,
 				E0A918FD24F19E0D000AB05D /* Info.plist */,
 			);
-			path = "beat-tap WatchKit App";
+			path = "beat-tap";
 			sourceTree = "<group>";
 		};
 		E0A9190624F19E0D000AB05D /* beat-tap WatchKit Extension */ = {
@@ -123,10 +123,10 @@
 				E0A9190724F19E0D000AB05D /* HostingController.swift */,
 				E0A9190924F19E0D000AB05D /* ContentView.swift */,
 				E0A9190B24F19E0D000AB05D /* ExtensionDelegate.swift */,
-				E0A9190D24F19E0D000AB05D /* ComplicationController.swift */,
 				E0A9190F24F19E0E000AB05D /* Assets.xcassets */,
 				E0A9191424F19E0E000AB05D /* Info.plist */,
 				E0A9191124F19E0E000AB05D /* Preview Content */,
+				E0A9192224F19EFE000AB05D /* ResultView.swift */,
 			);
 			path = "beat-tap WatchKit Extension";
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0A9190A24F19E0D000AB05D /* ContentView.swift in Sources */,
-				E0A9190E24F19E0D000AB05D /* ComplicationController.swift in Sources */,
+				E0A9192324F19EFE000AB05D /* ResultView.swift in Sources */,
 				E0A9190824F19E0D000AB05D /* HostingController.swift in Sources */,
 				E0A9190C24F19E0D000AB05D /* ExtensionDelegate.swift in Sources */,
 			);
@@ -351,6 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -405,6 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +419,7 @@
 		E0A9191824F19E0E000AB05D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"beat-tap WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = T2N82SS54Y;
@@ -434,14 +436,14 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
 			};
 			name = Debug;
 		};
 		E0A9191924F19E0E000AB05D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"beat-tap WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = T2N82SS54Y;
@@ -458,7 +460,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
 			};
 			name = Release;
 		};
@@ -471,14 +473,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2N82SS54Y;
 				IBSC_MODULE = beat_tap_WatchKit_Extension;
-				INFOPLIST_FILE = "beat-tap WatchKit App/Info.plist";
+				INFOPLIST_FILE = "beat-tap/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "marcwestermann.beat-tap.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
 			};
 			name = Debug;
 		};
@@ -491,14 +493,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2N82SS54Y;
 				IBSC_MODULE = beat_tap_WatchKit_Extension;
-				INFOPLIST_FILE = "beat-tap WatchKit App/Info.plist";
+				INFOPLIST_FILE = "beat-tap/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "marcwestermann.beat-tap.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
 			};
 			name = Release;
 		};

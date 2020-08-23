@@ -15,15 +15,15 @@ struct ContentView: View {
     
 //    @State private var hasTimeElapsed = false
 //    @State private var isActive = false
+    
     var body: some View {
-        
         VStack {
             
 //            NavigationView{
 //                NavigationLink(destination: ResultView(), isActive: self.$isActive) {EmptyView().frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 0, maxWidth: 0, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 0, maxHeight: 0, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).hidden()}.buttonStyle(PlainButtonStyle())
 //            }
             
-//            Spacer()
+            Spacer()
             
             Button(action: {
                 if self.reset {
@@ -50,25 +50,27 @@ struct ContentView: View {
                         }
                     }
                     
-                }.padding(.top)
+                }
             }.buttonStyle(PlainButtonStyle()).simultaneousGesture(LongPressGesture().onEnded { _ in
                     self.reset = true
 
             })
             .buttonStyle(PlainButtonStyle())
             
-            if self.tapCount <= 1 {
-                Text("Tap to measure")
-                    .padding(.top).transition(.move(edge: .bottom))
-                }
             
-            if self.tapCount >= 20 {
-                Text("Hold to reset")
-                    .padding(.top).transition(.move(edge: .bottom))
-                }
+                if self.tapCount <= 1 {
+                    Text("Tap to measure")
+                        .padding(.bottom).transition(.move(edge: .bottom)).animation(.easeOut(duration: 0.01))
+                    }
+                
+                if self.tapCount >= 20 {
+                    Text("Hold to reset")
+                        .padding(.bottom).transition(.move(edge: .bottom)).animation(.easeIn(duration: 0.01))
+                    }
             
             
-        }.navigationBarTitle("beat-tap").navigationBarBackButtonHidden(true)
+            
+        }.edgesIgnoringSafeArea(.bottom).navigationBarTitle("beat-tap").navigationBarBackButtonHidden(true)
     }
     
     func handleTap() -> Void {

@@ -5,7 +5,6 @@
 //  Created by Marc Westermann on 15/08/2020.
 //
 import SwiftUI
-import WatchKit
 
 struct ContentView: View {
     @State var tapCount : Int = 0
@@ -63,9 +62,13 @@ struct ContentView: View {
                     .padding(.top).transition(.move(edge: .bottom))
                 }
             
+            if self.tapCount >= 20 {
+                Text("Hold to reset")
+                    .padding(.top).transition(.move(edge: .bottom))
+                }
             
-        }
-//        .navigationTitle("beat-tap").navigationBarBackButtonHidden(true)
+            
+        }.navigationBarTitle("beat-tap").navigationBarBackButtonHidden(true)
     }
     
     func handleTap() -> Void {

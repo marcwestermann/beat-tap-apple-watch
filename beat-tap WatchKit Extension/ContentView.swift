@@ -30,6 +30,7 @@ struct ContentView: View {
                     WKInterfaceDevice.current().play(.stop)
                     
 //                    self.isActive = true
+                    
                     self.reset = false
                     self.tapCount = 0
                     self.bpm = "0"
@@ -49,7 +50,6 @@ struct ContentView: View {
                             Text(String("bpm")).colorInvert()
                         }
                     }
-                    
                 }
             }.buttonStyle(PlainButtonStyle()).simultaneousGesture(LongPressGesture().onEnded { _ in
                     self.reset = true

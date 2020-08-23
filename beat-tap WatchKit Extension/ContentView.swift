@@ -63,7 +63,7 @@ struct ContentView: View {
                         .padding(.bottom).transition(.move(edge: .bottom)).animation(.easeOut(duration: 0.01))
                     }
                 
-                if self.tapCount >= 20 {
+                if self.tapCount >= 32 {
                     Text("Hold to reset")
                         .padding(.bottom).transition(.move(edge: .bottom)).animation(.easeIn(duration: 0.01))
                     }

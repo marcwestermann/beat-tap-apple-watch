@@ -17,6 +17,7 @@
 		E0A9191024F19E0E000AB05D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A9190F24F19E0E000AB05D /* Assets.xcassets */; };
 		E0A9191324F19E0E000AB05D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A9191224F19E0E000AB05D /* Preview Assets.xcassets */; };
 		E0A9192324F19EFE000AB05D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9192224F19EFE000AB05D /* ResultView.swift */; };
+		E0A9192524F2AD6B000AB05D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E0A9192424F2AD6B000AB05D /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		E0A9191224F19E0E000AB05D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0A9191424F19E0E000AB05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0A9192224F19EFE000AB05D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		E0A9192424F2AD6B000AB05D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		E0A918E824F19E0B000AB05D = {
 			isa = PBXGroup;
 			children = (
+				E0A9192424F2AD6B000AB05D /* LICENSE */,
 				E0A918F724F19E0C000AB05D /* beat-tap */,
 				E0A9190624F19E0D000AB05D /* beat-tap WatchKit Extension */,
 				E0A918F024F19E0B000AB05D /* Products */,
@@ -254,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A9192524F2AD6B000AB05D /* LICENSE in Resources */,
 				E0A9191324F19E0E000AB05D /* Preview Assets.xcassets in Resources */,
 				E0A9191024F19E0E000AB05D /* Assets.xcassets in Resources */,
 			);

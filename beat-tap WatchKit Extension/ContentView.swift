@@ -70,18 +70,21 @@ struct ContentView: View {
             
             
             
-        }.contextMenu(menuItems: /*@START_MENU_TOKEN@*/{
-            Button(action: {
-                    self.reset = false
-                    self.tapCount = 0
-                    self.bpm = "0"
-                
-                WKInterfaceDevice.current().play(.stop)
-                
-            }, label: {
-                Text("Reset")
-            })
-        }/*@END_MENU_TOKEN@*/).edgesIgnoringSafeArea(.bottom).navigationBarTitle("beat-tap").navigationBarBackButtonHidden(true)
+        }
+//        .contextMenu(menuItems: /*@START_MENU_TOKEN@*/{
+//            Button(action: {
+//                    self.reset = false
+//                    self.tapCount = 0
+//                    self.bpm = "0"
+//
+//                WKInterfaceDevice.current().play(.stop)
+//
+//            }, label: {
+//                Text("Reset")
+//            })
+//        }/*@END_MENU_TOKEN@*/)
+        
+        .edgesIgnoringSafeArea(.bottom).navigationBarTitle("beat-tap").navigationBarBackButtonHidden(true)
     }
     
     func handleTap() -> Void {

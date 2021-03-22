@@ -13,23 +13,14 @@ struct ContentView: View {
     
     @State private var reset = false
     
-//    @State private var hasTimeElapsed = false
-//    @State private var isActive = false
-    
     var body: some View {
         VStack {
-            
-//            NavigationView{
-//                NavigationLink(destination: ResultView(), isActive: self.$isActive) {EmptyView().frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 0, maxWidth: 0, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 0, maxHeight: 0, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).hidden()}.buttonStyle(PlainButtonStyle())
-//            }
             
             Spacer()
             
             Button(action: {
                 if self.reset {
                     WKInterfaceDevice.current().play(.stop)
-                    
-//                    self.isActive = true
                     
                     self.reset = false
                     self.tapCount = 0
@@ -70,21 +61,7 @@ struct ContentView: View {
             
             
             
-        }
-//        .contextMenu(menuItems: /*@START_MENU_TOKEN@*/{
-//            Button(action: {
-//                    self.reset = false
-//                    self.tapCount = 0
-//                    self.bpm = "0"
-//
-//                WKInterfaceDevice.current().play(.stop)
-//
-//            }, label: {
-//                Text("Reset")
-//            })
-//        }/*@END_MENU_TOKEN@*/)
-        
-        .edgesIgnoringSafeArea(.bottom).navigationBarTitle("beat-tap").navigationBarBackButtonHidden(true)
+        }.edgesIgnoringSafeArea(.bottom).navigationBarTitle("beat-tap").navigationBarBackButtonHidden(true)
     }
     
     func handleTap() -> Void {

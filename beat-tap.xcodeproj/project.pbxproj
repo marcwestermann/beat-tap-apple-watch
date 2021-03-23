@@ -16,7 +16,6 @@
 		E0A9190C24F19E0D000AB05D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9190B24F19E0D000AB05D /* ExtensionDelegate.swift */; };
 		E0A9191024F19E0E000AB05D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A9190F24F19E0E000AB05D /* Assets.xcassets */; };
 		E0A9191324F19E0E000AB05D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A9191224F19E0E000AB05D /* Preview Assets.xcassets */; };
-		E0A9192324F19EFE000AB05D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9192224F19EFE000AB05D /* ResultView.swift */; };
 		E0A9192524F2AD6B000AB05D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E0A9192424F2AD6B000AB05D /* LICENSE */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,6 @@
 		E0A9190F24F19E0E000AB05D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0A9191224F19E0E000AB05D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0A9191424F19E0E000AB05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0A9192224F19EFE000AB05D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		E0A9192424F2AD6B000AB05D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +127,6 @@
 				E0A9190F24F19E0E000AB05D /* Assets.xcassets */,
 				E0A9191424F19E0E000AB05D /* Info.plist */,
 				E0A9191124F19E0E000AB05D /* Preview Content */,
-				E0A9192224F19EFE000AB05D /* ResultView.swift */,
 			);
 			path = "beat-tap WatchKit Extension";
 			sourceTree = "<group>";
@@ -271,7 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0A9190A24F19E0D000AB05D /* ContentView.swift in Sources */,
-				E0A9192324F19EFE000AB05D /* ResultView.swift in Sources */,
 				E0A9190824F19E0D000AB05D /* HostingController.swift in Sources */,
 				E0A9190C24F19E0D000AB05D /* ExtensionDelegate.swift in Sources */,
 			);

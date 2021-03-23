@@ -64,7 +64,7 @@ struct ContentView: View {
         }.edgesIgnoringSafeArea(.bottom).navigationBarTitle("beat-tap").navigationBarBackButtonHidden(true)
     }
     
-    func handleTap() -> Void {
+    func handleTap() {
         
         self.tapCount += 1
         
@@ -75,7 +75,7 @@ struct ContentView: View {
         }
     }
     
-    func calculateBPM() -> Void {
+    func calculateBPM() {
         let currentTime = Date()
         let elapsedMs =  currentTime.timeIntervalSince(self.startTime) * 1000
 
